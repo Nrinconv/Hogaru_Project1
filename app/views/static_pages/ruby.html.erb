@@ -54,13 +54,11 @@
                 <li>array = [1,2,3,4]</li>
                 <li>array.each { |n| puts "Each number x2: #{n*2}" } </li>
             </ul>
-            <p>
-                CONSOLE:
-                Each number x2: 2
-                Each number x2: 4
-                Each number x2: 6
-                Each number x2: 8
-            </p>
+            <p class = "console">CONSOLE:</p>
+            <p>Each number x2: 2</p>
+            <p>Each number x2: 4</p>
+            <p>Each number x2: 6</p>
+            <p>Each number x2: 8</p>
         </p>
     </li>
     <li>
@@ -68,7 +66,7 @@
         <p>
             <span class = "important">Respuesta: </span>
             <ul class = "code">
-                <li>italianNumbers = { "dos" => "due", "tres" => "tre", "cinco" => "cinque" }</li>
+                <li>cal = { :name => "Calamardo", :nickName => "Calamardinho" }</li>
             </ul>
         </p>
     </li>
@@ -76,28 +74,77 @@
         Cómo se itera un hash utilizando el comando each:
         <p>
             <span class = "important">Respuesta: </span>
-            
+            <ul class = "code">
+                <li>cal.each do |key, value|</li>
+                <li>&emsp; puts "Key #{key.inspect} has value #{value.inspect}"<li>
+                <li>end</li>
+            </ul>
+            <p class = "console"> CONSOLE: </p>
+            <p> Key :name has value "Calamardo" </p>
+            <p> Key :nickName has value "Calamardinho" </p>
+
         </p>
     </li>
     <li>
         ¿Que es un block en ruby? De un ejemplo de cómo utilizarlo:
         <p>
             <span class = "important">Respuesta: </span>
-            
+            Un block hace lo mismo que una funcion, pero este no tiene un nombre. Si es de una linea se usan {} o si es de 2+ lineas se usa do..end. EJEMPLO:
+            <ul class = "code">
+                <li>[1, 2, 3].each { |n| puts n * 2 }</li>
+            </ul>
+            <p class = "console"> CONSOLE: </p>
+            <p> 2 </p>
+            <p> 4 </p>
+            <p> 6 </p>
+            <p>Pero tambien podemos tener Yield,  palabra clave de Ruby que llama a un Block cuando lo usa. Entonces cuando se usa Yield, el código dentro del bloque se ejecutará. EJEMPLO:</p>
+            <ul class = "code">
+                <li>def PrintOnce</li>
+                <li>&emsp; yield<li>
+                <li>end</li>
+                <li>print_once { puts "Block is being run" }</li>
+            </ul>
+            <p> CONSOLE: Block is being run</p>           
         </p>
     </li>
     <li>
         ¿Cual es la convención en Ruby a la hora de nombrar variables?
         <p>
             <span class = "important">Respuesta: </span>
-            
+            <ul class = "code">
+                <li># Class CamelCase</li>
+                <li># def snake_case</li>
+                <li># snake_case = ...</li>
+            </ul>
         </p>
     </li>
     <li>
         ¿Qué son attr_reader, attr_writer y attr_accesor? ¿Para qué sirven?
         <p>
             <span class = "important">Respuesta: </span>
-            
+            attr_reader, attr_writer y attr_accesor funcionan como los "get" y un "set" en java, esto para tener las variables que se le asignen siempre disponibles. EJEMPLO:
+            <ul class = "code">
+                <li>attr_writer :age </li>
+                <li># Lo de arriba es lo mismo que la siguiente funcion</li>
+                <li>def age=(value)</li>
+                <li>&emsp; @age = value<li>
+                <li>end</li>
+                </br>
+                <li>attr_reader :age </li>
+                <li># Lo de arriba es lo mismo que la siguiente funcion</li>
+                <li>def age</li>
+                <li>&emsp; @age<li>
+                <li>end</li>
+                </br>
+                <li>attr_accessor :age </li>
+                <li># Lo de arriba es lo mismo que las siguientes funciones</li>
+                <li>def age=(value)</li>
+                <li>&emsp; @age = value<li>
+                <li>end</li>
+                <li>def age</li>
+                <li>&emsp; @age<li>
+                <li>end</li>
+            </ul>
         </p>
     </li>
 </ul>

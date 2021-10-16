@@ -65,3 +65,7 @@ a:hover {
     list-style-type: none;
     width: 60%;
 }
+
+.console{
+    font-weight: bold;
+}
