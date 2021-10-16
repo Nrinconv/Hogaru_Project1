@@ -13,3 +13,41 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+    background-color: rgb(220, 237, 243);
+    padding: 10px;
+    padding-left: 40px;
+    font-family: Lucida Console;
+}
+
+h1 {
+    color: #2c0f50;
+    font-weight: normal;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+p {
+    margin-left: 40px;
+}
+
+ul {
+    margin-left: 40px;
+}
+
+a:link {
+    color: rgb(255, 0, 212);
+}
+a:visited {
+    color: rgb(255, 0, 212);
+}
+a:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+.list {
+    list-style: square inside;
+}
