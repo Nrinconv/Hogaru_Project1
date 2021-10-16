@@ -11,54 +11,95 @@
         Inicialización de un repositorio de git nuevo en una aplicación existente
         <p>
             <span class = "important">Respuesta: </span>
+            <ul class = "code">
+                <li>$ git init</li>               
+            </ul>          
         </p>
     </li>
     <li>
         Creación de un branch nuevo
         <p>
             <span class = "important">Respuesta: </span>
+            <ul class = "code">
+                <li>$ git branch ＜branchname＞ </li>
+                
+            </ul>
         </p>
     </li>
     <li>
         Realizar un commit incluyendo todos los cambios actuales
         <p>
             <span class = "important">Respuesta: </span>
+            <ul class = "code">
+                <li>$ git add -A</li>
+                <li>$ git commit -m "Message"</li>
+            </ul>
         </p>
     </li>
     <li>
         Cómo enviar el código al repositorio remoto
         <p>
             <span class = "important">Respuesta: </span>
+            <ul class = "code">
+                <li>$ git push origin ＜existing-branch＞</li>
+            </ul>
         </p>
     </li>
     <li>
         Cómo configurar el origen del repositorio remoto para evitar escribirlo siempre cada vez que se hace un push o un pull.
         <p>
             <span class = "important">Respuesta: </span>
+            <ul class = "code">
+                <li>$ git remote add origin https://github.com/＜userName＞/＜repositoryName＞.git</li>
+            </ul>
         </p>
     </li>
     <li>
         Diferencia entre un reset y revert
         <p>
             <span class = "important">Respuesta: </span>
+            <ul>
+                <li>RESET: toma un commit específico y restablece el historial para que coincida con el estado del repositorio en ese commit específico.</li>
+                <li>REVERT: toma un commit específico y crea un nuevo commit con el contenido del commit especificado.</li>
+            </ul>
         </p>
     </li>
     <li>
         Además de cambiar de ramas, para qué más se puede utilizar el comando git checkout
         <p>
             <span class = "important">Respuesta: </span>
+            <ul class = "code">
+                <li>// Para cambiar de rama</li>
+                <li>$ git checkout ＜existing-branch＞</li>
+                <li>// Para crear y cambiar de rama</li>
+                <li>$ git checkout -b ＜new-branch＞</li>
+                <li>// O se puede crear una rama pero no cambiarse de rama</li>
+                <li>$ git checkout -b ＜new-branch＞ ＜existing-branch＞</li>
+            </ul>            
         </p>
     </li>
     <li>
         Como puede ver los commits que se han realizado en el proyecto
         <p>
             <span class = "important">Respuesta: </span>
+            <ul class = "code">
+                <li>$ git log</li>
+            </ul>
         </p>
     </li>
     <li>
         He modificado dos archivos y quiero hacer un commit por cada uno de ellos, ¿cómo lo puedo hacer?
         <p>
             <span class = "important">Respuesta: </span>
+            <ul class = "code">
+                <li>$ git add.</li>
+                <li>Changes to be committed:</li>
+                <li>     new file:    file1.z</li>
+                <li>     new file:    file2.z</li>
+                <li>$ git commit -m "Message first file" file1.z</li>
+                <li>$ git commit -m "Message second file" file2.z</li>
+            </ul>
         </p>
     </li>
 </ul>
+
