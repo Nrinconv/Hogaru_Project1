@@ -5,11 +5,13 @@
 <h1>HOME</h1>
 <p>
     La hora y fecha actual en Colombia es:
-    <%= 
+    <span class = "important">
+        <%= 
         a = Time.now
         time = a.to_s.split(' ')
         time[0..1].join('  /  ')
-    %>
+        %>
+    </span>
 </p>
 
 <p>

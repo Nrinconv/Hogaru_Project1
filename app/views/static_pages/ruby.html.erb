@@ -2,5 +2,103 @@
 <% provide(:image, 'https://image.flaticon.com/icons/png/512/919/919842.png') %>
 
 
-<h1>StaticPages#ruby</h1>
-<p>Find me in app/views/static_pages/ruby.html.erb</p>
+<h1>Ruby</h1>
+
+<p>¿Cómo se realizan las siguientes acciones en ruby?</p>
+
+<ul>
+    <li>
+        Interpolación de strings:
+        <p>
+            <span class = "important">Respuesta: </span>
+            <ul class = "code">
+                <li>nombre = "Juan"</li>
+                <li>apellido = "Capo"</li>
+                <li>puts "Nombre completo: #{nombre} #{apellido}" </li>
+                
+            </ul>
+            <p>
+                CONSOLE:
+                <%= 
+                    nombre = "Juan"
+                    apellido = "Capo"
+                    "Nombre completo: #{nombre} #{apellido}"
+                %>
+            </p>
+        </p>
+    </li>
+    <li>
+        Cómo se declara un array y cómo se adiciona un elemento al final del array:
+        <p>
+            <span class = "important">Respuesta: </span>
+            <ul class = "code">
+                <li>array = [1,2,3,4]</li>
+                <li>array << "JAIME"</li>
+                <li>puts array </li>
+                
+            </ul>
+            <p>
+                CONSOLE:
+                <%= 
+                    array = [1,2,3,4]
+                    array << "JAIME"
+                    array
+                %>
+            </p>
+        </p>
+    </li>
+    <li>
+        Cómo se itera un array utilizando el comando each:
+        <p>
+            <span class = "important">Respuesta: </span>
+            <ul class = "code">
+                <li>array = [1,2,3,4]</li>
+                <li>array.each { |n| puts "Each number x2: #{n*2}" } </li>
+            </ul>
+            <p>
+                CONSOLE:
+                Each number x2: 2
+                Each number x2: 4
+                Each number x2: 6
+                Each number x2: 8
+            </p>
+        </p>
+    </li>
+    <li>
+        Cómo se declara un hash:
+        <p>
+            <span class = "important">Respuesta: </span>
+            <ul class = "code">
+                <li>italianNumbers = { "dos" => "due", "tres" => "tre", "cinco" => "cinque" }</li>
+            </ul>
+        </p>
+    </li>
+    <li>
+        Cómo se itera un hash utilizando el comando each:
+        <p>
+            <span class = "important">Respuesta: </span>
+            
+        </p>
+    </li>
+    <li>
+        ¿Que es un block en ruby? De un ejemplo de cómo utilizarlo:
+        <p>
+            <span class = "important">Respuesta: </span>
+            
+        </p>
+    </li>
+    <li>
+        ¿Cual es la convención en Ruby a la hora de nombrar variables?
+        <p>
+            <span class = "important">Respuesta: </span>
+            
+        </p>
+    </li>
+    <li>
+        ¿Qué son attr_reader, attr_writer y attr_accesor? ¿Para qué sirven?
+        <p>
+            <span class = "important">Respuesta: </span>
+            
+        </p>
+    </li>
+</ul>
