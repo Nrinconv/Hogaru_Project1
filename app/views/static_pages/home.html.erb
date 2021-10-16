@@ -7,7 +7,7 @@
     La hora y fecha actual en Colombia es:
     <span class = "important">
         <%= 
-        a = Time.now
+        a = Time.new.utc - (60 * 60 * 5)
         time = a.to_s.split(' ')
         time[0..1].join('  /  ')
         %>
